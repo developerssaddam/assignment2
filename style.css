@@ -20,10 +20,10 @@ h3,
 h4,
 h5,
 h6 {
-    color: #131318;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 60px;
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
 }
 
 p {
@@ -40,4 +40,84 @@ a {
   text-decoration: none;
   color: #424247;
   font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Header area style */
+.header {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.navigation_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_area {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.logo img {
+  display: block;
+}
+
+.logo_area h3 {
+  font-size: 2rem;
+}
+
+.logo_area h3 span {
+  color: #ff5400;
+}
+
+.menu_area {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.menu_area button {
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.menu_area button i {
+  font-size: 1.25rem;
+  padding: 5px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+/* Responsive for mobile Device */
+@media screen and (max-width: 600px) {
+  .menu_area button {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+/* Responsive for medium device */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .menu_area button {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
 }
