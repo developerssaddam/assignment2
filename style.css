@@ -22,12 +22,14 @@ h6 {
   font-size: 40px;
   font-weight: 800;
   line-height: 60px;
+  margin-bottom: 40px;
 }
 
 p {
   color: #5a5a5d;
   font-size: 1rem;
   line-height: 26px;
+  margin-bottom: 20px;
 }
 
 li {
@@ -45,9 +47,20 @@ img {
   object-fit: cover;
 }
 
+.btn_primary {
+  border: none;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 /* Header area style */
 
-.container{
+.container {
   max-width: 1490px;
   margin: 0 auto;
 }
@@ -75,6 +88,7 @@ img {
 
 .logo_area h3 {
   font-size: 2rem;
+  margin-bottom: 0px;
 }
 
 .logo_area h3 span {
@@ -136,7 +150,7 @@ img {
 }
 
 .banner_content {
-  width: 70%;
+  width: 87%;
   margin: 0 auto;
 }
 
@@ -147,7 +161,7 @@ img {
 }
 
 .banner_title {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .input_container {
@@ -178,7 +192,8 @@ img {
   border-radius: 8px;
 }
 
-.input_item input, select{
+.input_item input,
+select {
   width: 100%;
   padding: 20px;
   border-radius: 8px;
@@ -204,6 +219,51 @@ i {
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.search h4 {
+  margin-bottom: 0px;
+}
+
+.popular_tour {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+}
+
+.popular_tour_content {
+  flex: 1;
+}
+
+.popular_tour_img {
+  flex: 1;
+}
+
+.list {
+  padding-left: 20px;
+}
+
+.list_item {
+  display: block;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.list_item::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  left: 0;
+  top: 10px;
 }
 
 /* Responsive for mobile Device */
@@ -245,7 +305,18 @@ i {
   .input_item {
     width: 100%;
   }
+  .popular_tour {
+    flex-direction: column;
+  }
 
+  .btn_primary {
+    font-size: 1rem;
+  }
+
+  .section_title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 /* Responsive for medium device */
@@ -288,4 +359,20 @@ i {
     width: 100%;
   }
 
+  .popular_tour {
+    flex-direction: column;
+  }
+
+  .section_title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .btn_primary {
+    font-size: 18px;
+  }
+
+  .popular_tour_img {
+    text-align: center;
+  }
 }
