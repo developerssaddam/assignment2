@@ -279,10 +279,9 @@ i {
     font-size: 1.3rem;
   }
 
-  .logo{
+  .logo {
     width: 25px;
   }
-  
 
   .banner_area {
     padding: 0px;
@@ -300,6 +299,8 @@ i {
 
   .banner_title {
     font-size: 1.3rem;
+    line-height: normal;
+    margin-bottom: 15px;
   }
 
   .input_container {
@@ -347,7 +348,7 @@ i {
     font-size: 1.6rem;
   }
 
-  .logo{
+  .logo {
     width: 30px;
   }
 
@@ -367,6 +368,7 @@ i {
 
   .banner_title {
     font-size: 1.6rem;
+    margin-bottom: 20px;
   }
 
   .input_container {
