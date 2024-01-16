@@ -279,6 +279,11 @@ i {
     font-size: 1.3rem;
   }
 
+  .logo{
+    width: 25px;
+  }
+  
+
   .banner_area {
     padding: 0px;
   }
@@ -340,6 +345,10 @@ i {
 
   .logo_area h3 {
     font-size: 1.6rem;
+  }
+
+  .logo{
+    width: 30px;
   }
 
   .banner_area {
