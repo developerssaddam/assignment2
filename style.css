@@ -364,7 +364,7 @@ i {
   gap: 20px;
 }
 
-.chose_item_container img{
+.chose_item_container img {
   width: 50px;
   height: 50px;
 }
@@ -392,6 +392,107 @@ i {
 
 .chose_item_container .item3 {
   grid-column: 4 / 10;
+}
+
+.dicount {
+  width: 80%;
+  margin: 0 auto 40px;
+}
+
+.dicount_conten {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.discount_item_container {
+  width: 100%;
+}
+
+.discount_item1 {
+  width: 100%;
+  height: auto;
+  background-image: url("Images/Group 39.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.discount_item2 {
+  width: 100%;
+  height: auto;
+  background-image: url("Images/Group 40.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.discount_item3 {
+  width: 100%;
+  height: auto;
+  background-image: url("Images/Group 40.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.details_box {
+  width: 350px;
+  padding: 1rem;
+  border-radius: 16px;
+  position: relative;
+  right: 0;
+  z-index: 1;
+}
+
+.details_box::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  border-radius: 16px;
+  opacity: 0.8;
+  z-index: -1;
+  border: 2px solid #fff;
+}
+
+.details_title {
+  font-size: 24px;
+  margin-bottom: -10px;
+}
+
+.details_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details_info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: -8px;
+}
+
+.details_info img {
+  width: 20px;
+}
+
+.price {
+  color: #ff5400;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 /* Responsive for mobile Device */
@@ -516,6 +617,30 @@ i {
 
   .chose_item_container .item3 {
     grid-column: 1 / 13;
+  }
+
+  .discount_item1 {
+    padding-top: 150px;
+    justify-content: center;
+  }
+
+  .discount_item2 {
+    padding-top: 150px;
+    justify-content: center;
+  }
+
+  .discount_item3 {
+    padding-top: 150px;
+    justify-content: center;
+  }
+
+  .details_info p {
+    font-size: 12px;
+  }
+
+  .details_info img {
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -645,5 +770,17 @@ i {
 
   .chose_item_container .item3 {
     grid-column: 1 / 13;
+  }
+
+  .discount_item1 {
+    padding-top: 150px;
+  }
+
+  .discount_item2 {
+    padding-top: 150px;
+  }
+
+  .discount_item3 {
+    padding-top: 150px;
   }
 }
